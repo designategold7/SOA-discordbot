@@ -1,0 +1,20 @@
+Legal & Privacy Documentation
+​Effective Date: March 11, 2026
+Operated By: Poke Bayou Farms LLC
+​This document outlines the Terms of Service (ToS) and Privacy Policy for the "SOA Bot" (the "Bot"), a custom Discord application deployed for community management, moderation, and roleplay synchronization.
+​By adding the Bot to your Discord server or interacting with its slash commands, buttons, or modals, you agree to the following terms and policies.
+​Part 1: Privacy Policy
+​Poke Bayou Farms LLC is committed to transparency regarding how the Bot processes, stores, and handles user data. The Bot strictly collects only the data necessary for its core operational functions.
+​1. Data We Collect
+​When you interact with the Bot, the following data points may be collected and processed:
+​Discord User IDs & Usernames: Unique numerical identifiers assigned by Discord, used to link roleplay characters to actual Discord accounts and to track moderation actions.
+​User-Provided Text: Information submitted through Discord UI Modals (e.g., Prospect Applications, containing character names, ages, and backgrounds).
+​Message Content & Transcripts: When a support ticket is opened using the Bot, all messages, timestamps, and attachment URLs sent within that specific ticket channel are temporarily processed in system memory.
+​Server IDs (Guild IDs): To ensure commands are routed to the correct database tables.
+​2. How Data is Stored and Used
+​SQLite Database: Roster information (User IDs, character names, and ranks) and gang relations statuses are stored locally in a secure SQLite database (soa_data.db) hosted on our infrastructure.
+​Ticket Archival: Upon the closure of a support ticket, the Bot compiles the channel's message history into a .txt transcript file. This file is uploaded to a designated, restricted-access High Command logging channel within the Discord server, after which the original ticket channel is permanently destroyed. The bot does not retain a copy of this transcript on its local host machine.
+​No Third-Party Sharing: Poke Bayou Farms LLC does not sell, trade, or otherwise transmit your data to outside parties. Data is only exchanged directly with the Discord API.
+​3. Data Retention and Deletion
+​Database Records: Roster and relation data are kept indefinitely to ensure the persistent operation of the community's roleplay environment.
+​User Rights: If a user wishes to have their User ID purged from the Bot's database, they must contact the server's High Command/Administrators, who hold the authority to remove records manually.
